@@ -69,7 +69,7 @@ export function Febre(g){
     }
     return x
 }
-
+//test push
 export function Dobro (n){
     return n * 2
 }
@@ -81,4 +81,4 @@ export function Media(n1,n2,n3){
     let x = n1 + n2 + n3
 
     return x/3  
-}
+} 
