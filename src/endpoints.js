@@ -60,7 +60,7 @@ server.get('/freq/:frase/:c' , (req, resp) =>{
 
 server.post('/maior' , (req,resp) => {
     try{
-        const n = req.body.n
+        const n = req.body;
 
         const y = Maior(n)
 
