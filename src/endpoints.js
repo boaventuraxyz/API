@@ -172,7 +172,7 @@ server.post('/media' , (req,resp) => {
     const x = Media (n1,n2,n3)
 
     resp.send({
-        média: x
+        media: x
     })
 }
     catch(err) {
