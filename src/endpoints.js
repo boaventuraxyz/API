@@ -24,9 +24,9 @@ server.get('/primaria/:cor' , (req, resp) => {
 server.post('/cinema' , (req, resp) => {
     try{
 
-        const {a,b,c} = req.body
+        const {a,b,c,d} = req.body
 
-        const y = Cinema(a,b,c)
+        const y = Cinema(a,b,c,d)
 
     resp.send({
         cinema: y

@@ -8,23 +8,23 @@ export function Primaria(cor){
     }
 
 }
-export function Cinema (filme, dia, pessoas){
-    let i = 0;
-    if (filme == 'nacional' && dia == 'quarta'){
-        i = 2.50;
-    }
-    else if (filme == 'nacional'){
-        i = 5;
-    }
-    else if (dia == 'quarta' && filme == 'internacional'){
-        i = 14.25;
-    }
-    else if (filme == 'internacional'){
-        i = 28.50;
+export function Cinema (inteira, meia, nacionalidade, dia){
+    let b = meia * 14.25;
+    let c = inteira * 28.5;
+    
+    
+    if (dia == "quarta") {
+        c = inteira * 14.25;
     }
 
-    let x = i * pessoas;
-    return x;
+    if (nacionalidade == "brasileiro") {
+        b = meia * 5;
+        c = inteira * 5;
+    }
+
+    let a = b + c;
+
+    return a;
 }
 
 export function Freq (texto, caracter){    
