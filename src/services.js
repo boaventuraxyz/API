@@ -55,7 +55,7 @@ export function Tabuada (n){
     let x = []
     let e = 0;
     for (let i = 1; i <= 10; i++){
-        x[e] = i * 5
+        x[e] = i * n
         e++ 
     }
     return x
