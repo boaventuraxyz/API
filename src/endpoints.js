@@ -148,22 +148,7 @@ server.get('/soma' , (req,resp) => {
     }
 })
 
-server.post('/soma' , (req,resp) => {
-    try{
-    const {n1, n2} = req.body 
 
-    const x = Soma(n1,n2) 
-
-    resp.send({
-        soma: x 
-    })
-}
-    catch(err){
-        resp.send({
-            erro: err.message
-        })
-    } 
-})
 
 server.post('/media' , (req,resp) => {
     try{
