@@ -128,12 +128,9 @@ server.get('/dobro/:n' , (req, resp) => {
     }
 })
 
-server.get('/soma' , (req,resp) => {
+server.post('/soma' , (req,resp) => {
     try{
-    //const {n1, n2} = Number(req.query) 
-
-    const n1 = Number(req.query.n1)
-    const n2 = Number(req.query.n2)
+    const {n1, n2} = req.body
 
     const x = Soma(n1,n2) 
 
